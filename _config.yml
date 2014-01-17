@@ -1,0 +1,4 @@
+name: Peter Hudson
+destination: docroot
+markdown: redcarpet
+pygments: false

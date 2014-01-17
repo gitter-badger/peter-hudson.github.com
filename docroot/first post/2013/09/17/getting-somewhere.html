@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Getting Somewhere</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="/assets/themes/custom/css/font-awesome-ie7.min.css">
+        <![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Podkova:400,700|Ranchers' rel='stylesheet' type='text/css'>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://shortmail.com/widgets/compose-widget.js?v=1"></script>
+        <script src="dart/packages/shadow_dom/shadow_dom.debug.js"></script>
+    </head>
+    <body>
+
+
+        <div class="site">
+          <div class="header">
+              <div class="ma-face">
+                  <img src="http://www.gravatar.com/avatar/8b297703b8fcfc994c00d0f8847c2511" />
+              </div>
+            <h1 class="title"><a href="/">Peter Hudson</a></h1>
+          </div>
+            <h2>Getting Somewhere</h2>
+<p class="meta">17 Sep 2013</p>
+
+<div class="post">
+<p>Included file JB/setup not found in _includes directory</p>
+
+<h2>Digital Ocean Tutorial</h2>
+
+<p>This is a test blog post to see auto deploy works..</p>
+
+</div>
+
+            <div ng-app="MyAppModule">
+                <div ng-hide="true" class="border well loading">Wait, Tweets are loading.. :)</div>
+                <div main-controller class="border" ng-cloak>
+                    <ng-view></ng-view>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="contact">
+                    <p>
+                        Peter Hudson<br />
+                        A jack of all trades and a master of none. Developer based in London.<br />
+                        <i class="icon-wrench"></i> Continuously being updated, so will look <em>crap</em> a lot of the time.<br />
+                        <small><i class="icon-envelope-o"></i> emailme@peterhudson.name</small>
+                    </p>
+                </div>
+                <div class="contact">
+                    <p>
+                        <i class="icon-github-alt"></i> <a href="https://github.com/Peter-Hudson">github.com/Peter-Hudson</a><br />
+                        <i class="icon-twitter"></i> <a href="https://twitter.com/Peter_Hudson"> twitter.com/Peter_Hudson</a><br />
+                        <span class="contact-form" onclick="return Shortmail.showWindow();" title="Shortmail Me!"><i class="icon-envelope"></i> contact form</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+         <script type="application/dart" src="/dart/main.dart"></script>
+        <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+        <script src="/dart/packages/browser/dart.js"></script>
+        <script>
+            Shortmail.ComposeWidget({
+                screenName: 'peter_hudson@shortmail.com'
+            });
+        </script>
+    </body>
+</html>

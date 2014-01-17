@@ -1,0 +1,16 @@
+/*.tweet-item {*/
+  /*border:soild 1px #ef00a1;*/
+/*}*/
+
+/*.twitter-wrapper {*/
+  /*border:solid 1px #000000;  */
+/*}*/
+
+/*.tweet-item {*/
+  /*border:solid 1px #ff0000;  */
+/*}*/
+
+#twitter {
+    height: 200px;
+    overflow: auto;
+}

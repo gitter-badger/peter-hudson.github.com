@@ -1,0 +1,8 @@
+name: learn_dart_and_angular
+version: 0.0.1
+dependencies:
+  angular:
+  browser: any
+  js: any
+  unittest: any
+  shadow_dom: any

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>First Vagrant Post</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="/assets/themes/custom/css/font-awesome-ie7.min.css">
+        <![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Podkova:400,700|Ranchers' rel='stylesheet' type='text/css'>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://shortmail.com/widgets/compose-widget.js?v=1"></script>
+        <script src="dart/packages/shadow_dom/shadow_dom.debug.js"></script>
+    </head>
+    <body>
+
+
+        <div class="site">
+          <div class="header">
+              <div class="ma-face">
+                  <img src="http://www.gravatar.com/avatar/8b297703b8fcfc994c00d0f8847c2511" />
+              </div>
+            <h1 class="title"><a href="/">Peter Hudson</a></h1>
+          </div>
+            <h2>First Vagrant Post</h2>
+<p class="meta">04 Jun 2013</p>
+
+<div class="post">
+<p>Included file JB/setup not found in _includes directory</p>
+
+<h2>This is my first post using Vagrant for Jekyll</h2>
+
+<p>Yes! I am one step closer to making my life easier for writing this blog! I tell thee, setting up Ruby on Windows 7/8 doesn&#39;t bode well with me.. But thankfully I came across a Vagrant tutorial <a href="http://dwradcliffe.com/2013/04/12/vagrant-to-compile-jekyll.html">http://dwradcliffe.com/2013/04/12/vagrant-to-compile-jekyll.html</a> Unfortunately a little out of date with the reference to a couple of Jekyll commands, but Jekyll corrects you on that and for some reason it didn&#39;t install Jekyll from the Vagrantfile through no fault of the tutorial (I just had to run the commands from the Vagrantfile for Jekyll manually). So I can&#39;t moan at all!</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">Vagrant::Config.run do |config|
+
+ config.vm.box = &quot;precise32&quot;
+ config.vm.box_url = &quot;http://files.vagrantup.com/precise32.box&quot;
+ config.vm.forward_port 4000, 4000
+ config.vm.provision :shell, :inline =&gt; &quot;sudo apt-get -y install build-essential &amp;&amp; sudo /opt/vagrant_ruby/bin/gem install jekyll rdiscount --no-ri --no-rdoc&quot;
+
+end
+</code></pre></div>
+</div>
+
+            <div ng-app="MyAppModule">
+                <div ng-hide="true" class="border well loading">Wait, Tweets are loading.. :)</div>
+                <div main-controller class="border" ng-cloak>
+                    <ng-view></ng-view>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="contact">
+                    <p>
+                        Peter Hudson<br />
+                        A jack of all trades and a master of none. Developer based in London.<br />
+                        <i class="icon-wrench"></i> Continuously being updated, so will look <em>crap</em> a lot of the time.<br />
+                        <small><i class="icon-envelope-o"></i> emailme@peterhudson.name</small>
+                    </p>
+                </div>
+                <div class="contact">
+                    <p>
+                        <i class="icon-github-alt"></i> <a href="https://github.com/Peter-Hudson">github.com/Peter-Hudson</a><br />
+                        <i class="icon-twitter"></i> <a href="https://twitter.com/Peter_Hudson"> twitter.com/Peter_Hudson</a><br />
+                        <span class="contact-form" onclick="return Shortmail.showWindow();" title="Shortmail Me!"><i class="icon-envelope"></i> contact form</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+         <script type="application/dart" src="/dart/main.dart"></script>
+        <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+        <script src="/dart/packages/browser/dart.js"></script>
+        <script>
+            Shortmail.ComposeWidget({
+                screenName: 'peter_hudson@shortmail.com'
+            });
+        </script>
+    </body>
+</html>

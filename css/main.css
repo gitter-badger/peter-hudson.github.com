@@ -1,0 +1,209 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  font: 13.34px Helvetica, Arial, sans-serif;
+  text-align: center;
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+
+a         { color: #00a; }
+a:hover   { color: #000; }
+a:visited { color: #a0a; }
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.posts li {
+  line-height: 1.75em;
+}
+
+.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 42em;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
+}
+
+.header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.title {
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.title a {
+  color: #a00;
+}
+
+.title a:hover {
+  color: #000;
+}
+
+.header a.extra {
+  color: #aaa;
+  margin-left: 1em;
+}
+
+.header a.extra:hover {
+  color: #000;
+}
+
+.meta {
+  color: #aaa;
+}
+
+.footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+.footer .contact a, .footer .contact span.contact-form {
+  color: #8085C1;
+  cursor: pointer;
+}
+
+.footer .contact span.contact-form:hover {
+    text-decoration: underline;
+}
+
+.footer .contact span.contact-form i, .footer .contact span.contact-form i:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer .rss {
+  margin-top: 1.1em;
+  margin-right: -.2em;
+  float: right;
+}
+
+.footer .rss img {
+  border: 0;
+}
+
+
+.ng-hide {
+    display: none;
+}
+
+[ng-cloak] {
+    display: none;
+}
+
+.loading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body .shortmail-compose-widget button.shortmail-me{
+    display: none !important;
+}
+
+.ma-face {
+    position: absolute;
+    margin: 22px 0 0 -100px;
+}
+
+.ma-face img {
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+}
+
+.contact-form {
+
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
