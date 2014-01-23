@@ -16,10 +16,10 @@ class MyAppModule extends Module {
   MyAppModule() {
     type(Twitter);
     type(MainController);
-    type(Profiler, implementedBy: Profiler); // comment out to enable profiling
-    type(RouteInitializer, implementedBy: PageRouteInitializer);
-    factory(NgRoutingUsePushState,
-        (_) => new NgRoutingUsePushState.value(false));
+//    type(Profiler, implementedBy: Profiler); // comment out to enable profiling
+//    type(RouteInitializer, implementedBy: PageRouteInitializer);
+//    factory(NgRoutingUsePushState,
+//        (_) => new NgRoutingUsePushState.value(false));
   }
 }
 
@@ -38,12 +38,13 @@ class PageRouteInitializer implements RouteInitializer {
         path: '/about',
         enter: view('dart/parts/about.html')
       );
+
   }
 }
 
 
 main() {
-  Logger.root.level = Level.FINEST;
-  Logger.root.onRecord.listen((LogRecord r) => print(r.message) );
+//  Logger.root.level = Level.FINEST;
+//  Logger.root.onRecord.listen((LogRecord r) => print(r.message) );
   ngBootstrap(module: new MyAppModule());
 }
