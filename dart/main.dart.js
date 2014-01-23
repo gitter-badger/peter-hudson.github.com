@@ -71587,7 +71587,7 @@ gOo:function(){return new H.nLs(this,U.vX.prototype.qgM,null,"qgM")},
 static:{OXM:function(a,b,c){var z
 H.lD(a,"$iswh")
 H.lD(b,"$isVq")
-z=new U.vX(H.lD(c,"$isPF"),null,null,null,a,b,0,null,null,10,"dart/updates.json")
+z=new U.vX(H.lD(c,"$isPF"),null,null,null,a,b,0,null,null,10,"/dart/twitter_updates.json")
 z.mh=H.lD(C.BZ.ex(document,"ul",null),"$islzJ")
 J.aR(z.mh,"class","list-group")
 z.GH(z.Cp,z.gEh())

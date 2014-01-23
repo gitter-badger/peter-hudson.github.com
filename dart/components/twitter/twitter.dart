@@ -24,7 +24,7 @@ import 'dart:async';
     var setTimer;
     Duration durationCount;
     int duration_time = 10;
-    final String json_url = 'dart/updates.json';
+    final String json_url = '/dart/twitter_updates.json';
 
     void onShadowRoot(ShadowRoot shadowRoot) {
       domcontainer = shadowRoot.querySelector("#twitter");
