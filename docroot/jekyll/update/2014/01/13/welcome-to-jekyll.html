@@ -9,6 +9,7 @@
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="shortcut icon" href="http://www.gravatar.com/avatar/8b297703b8fcfc994c00d0f8847c2511?s=16" />
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <!--[if IE 7]>
         <link rel="stylesheet" href="/assets/themes/custom/css/font-awesome-ie7.min.css">
@@ -34,29 +35,14 @@
 <p class="meta">13 Jan 2014</p>
 
 <div class="post">
-<p>You&#39;ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
-To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<p><div>
-    <pre><code class='ruby'>def print<em>hi(name)
-  puts &quot;Hi, #{name}&quot;
-end
-print</em>hi(&#39;Tom&#39;)</p>
-
-<h1>=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</code></pre></h1>
-
-<p></div></p>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/mojombo/jekyll">Jekyll&#39;s GitHub repo</a>.</p>
+<p>Hi! You may have noticed I have slightly updated things..</p>
 
 </div>
 
-            <div ng-app="MyAppModule">
-                <div ng-hide="true" class="border well loading">Wait, Tweets are loading.. :)</div>
+            <div ng-app>
+                <div ng-hide="true" class="border well loading">Tweets are loading.. :)</div>
                 <div main-controller class="border" ng-cloak>
-                    <ng-view></ng-view>
+                    <twitter></twitter>
                 </div>
             </div>
 
@@ -81,6 +67,7 @@ print</em>hi(&#39;Tom&#39;)</p>
          <script type="application/dart" src="/dart/main.dart"></script>
         <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
         <script src="/dart/packages/browser/dart.js"></script>
+        <script src="/js/shortmail.js"></script>
         <script>
             Shortmail.ComposeWidget({
                 screenName: 'peter_hudson@shortmail.com'
