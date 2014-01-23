@@ -8,8 +8,8 @@ import 'dart:async';
 
 @NgComponent(
     selector: 'twitter',    
-    templateUrl: 'dart/components/twitter/twitter.html',
-    cssUrl: 'dart/components/twitter/twitter.css',
+    templateUrl: '/dart/components/twitter/twitter.html',
+    cssUrl: '/dart/components/twitter/twitter.css',
     publishAs: 'tw'
   )
 
